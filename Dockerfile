@@ -1,4 +1,4 @@
-FROM golang:1.12-4-stretch
+FROM golang:latest
 ENV GO111MODULE=on
 WORKDIR /module
 COPY . /module/
