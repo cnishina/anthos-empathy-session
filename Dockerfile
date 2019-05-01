@@ -8,5 +8,5 @@ RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 \
     -o bar
 
 FROM scratch
-COPY --from=/module/bar .
+COPY --from=0 /module/bar .
 ENTRYPOINT ["/bar"]
